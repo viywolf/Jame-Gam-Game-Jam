@@ -42,9 +42,9 @@ enum{
 var growth_adj_list: Array[Array] = [
 	["Start", [SAUSAGE, EGG, STINGRAY, DORITOS], ["Sausage", "Eggs", "One Whole Stingray", "Doritos (for breakfast)"], "res://assets/icon.svg"],
 	["Sausage", [BOWLING_PIN, CAR, SKATEBOARD, PHONE], ["Bowling", "Toy Car", "Skateboard", "Phone"], "res://assets/icon.svg"],
-	["Stingray", [BOOMERANG, GOLDFISH, TOY_BLOCKS, TOY_FISH], ["Boomerang", "Goldfish", "Toy Blocks", "Toy Fish"]],
-	["Egg", [SAUSAGE, EGG, STINGRAY, DORITOS], ["Sausage", "Eggs", "One Whole Stingray", "Doritos (for breakfast)"]],
-	["Doritos", [SAUSAGE, EGG, STINGRAY, DORITOS], ["Sausage", "Eggs", "One Whole Stingray", "Doritos (for breakfast)"]], 
+	["Stingray", [BOOMERANG, GOLDFISH, TOY_BLOCKS, TOY_FISH], ["Boomerang", "Goldfish", "Toy Blocks", "Toy Fish"],"res://assets/icon.svg"],
+	["Egg", [SAUSAGE, EGG, STINGRAY, DORITOS], ["Sausage", "Eggs", "One Whole Stingray", "Doritos (for breakfast)"],"res://assets/icon.svg"],
+	["Doritos", [SAUSAGE, EGG, STINGRAY, DORITOS], ["Sausage", "Eggs", "One Whole Stingray", "Doritos (for breakfast)"],"res://assets/icon.svg"], 
 ]
 
 var cur_pet_type: int = 0
@@ -75,5 +75,6 @@ func update_options(pet_type: int) -> void:
 func option_pressed(option_no: int) -> void:
 	cur_pet_type = growth_adj_list[cur_pet_type][AdjList.GROWTH_PATH][option_no]
 	cur_question_no += 1
+	update_options(cur_pet_type)
 	%QuestionLabel.text = questions[cur_question_no]
 	$PetSprite.texture = load(growth_adj_list[cur_pet_type][AdjList.SPRITE_PATH])
