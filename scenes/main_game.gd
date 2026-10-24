@@ -67,7 +67,7 @@ var growth_adj_list: Array[Array] = [
 
 var cur_pet_type: int = 0
 
-
+var cur_count: float = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -79,8 +79,13 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	$Control/CurPetLabel.text = "Current Pet: " + str(growth_adj_list[cur_pet_type][AdjList.NAME])
+	cur_count += delta / 2
+	var rotation_offset: float = pingpong(cur_count, PI/8)
+	$PetSprite.rotation = rotation_offset - PI/16
+	var position_offset: float = pingpong(cur_count * 100, 20)
+	$PetSprite.position.y = position_offset + 300
 	
 
 
