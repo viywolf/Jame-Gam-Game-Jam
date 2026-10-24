@@ -63,26 +63,26 @@ enum{
 
 var growth_adj_list: Array[Array] = [
 	["Start", [SAUSAGE, EGGS, FISH, VEGETABLES], ["Sausage", "Eggs", "One Whole Stingray", "Brocolili"], "res://assets/icon.svg"],
-	["Sausage", [PAPER_AIRPLANE, BOOMERANG, BOWLING, STICKS], [], ""], 
-	["Fish", [RACING, TOYS, FLASHLIGHT, MERRY_GO_ROUND], [], ""], 
-	["Eggs", [RUNNING, CHESS, SOFT_TOYS, SWIMMING], [], ""], 
-	["Vegetables", [DOMINOES, OUTSIDE, DOG, JUMPING_JACKS], [], ""], 
-	["Sticks", [SCHOOL, PARTYING,], [], ""],  #??? the diagram is so unclear
-	["Bowling", [DOWNTOWN, ROLLING, YOUR_FRIEND, SCHOOL], [], ""], 
-	["Boomerang", [YOUR_FRIEND, NEIGHBOUR_WINDOW, DOWNTOWN, ROLLING], [], ""], 
-	["Paper airplane", [GROUND, IN_THE_AIR, FLYING, DOWNTOWN], [], ""], 
-	["Racing", [FISHING, FENCING, ANTARTICA, SURFACE], [], ""], 
-	["Toys", [ANTARTICA, SURFACE, IN_THE_AIR, DEEP_UNDERWATER], [], ""], 
-	["Flashlight", [DEEP_UNDERWATER, SURFACE, GROUND, CIVILIZATION], [], ""], 
-	["Merry go round", [SPINNING, SCHOOL, DOWNTOWN, HOME], [], ""], 
-	["Dominoes", [HOME, ROLLING, WALKING, SPINNING], [], ""], 
-	["Outside", [DOWNTOWN, SCHOOL, WALKING, CHILDCARE], [], ""], 
-	["Dog", [WALKING, SPINNING, DIVING, CHILDCARE], [], ""], 
-	["Jumping jacks", [SCHOOL, HOME, SURFACE, HOUSE], [], ""], 
-	["Running", [HOME, SCHOOL, DIVING, MT_EVEREST], [], ""], 
-	["Swimming", [SPINNING, SURFACE, MT_EVEREST, WALKING], [], ""], 
-	["Soft toys", [MT_EVEREST, CAT_HOME, HOUSE, SURFACE], [], ""], 
-	["Chess", [WALKING, PARTYING, ROLLING, DOWNTOWN], [], ""], 
+	["Sausage", [PAPER_AIRPLANE, BOOMERANG, BOWLING, STICKS], ["Paper Airplane", "A Boomerang", "Let's Go Bowling", "Random Sticks From The Ground"], ""], 
+	["Fish", [RACING, TOYS, FLASHLIGHT, MERRY_GO_ROUND], ["Race With The Other Creatures", "Random Toys", "A Flashlight", "Carnival Merry-Go-Round"], ""], 
+	["Eggs", [RUNNING, CHESS, SOFT_TOYS, SWIMMING], ["Run Around The Block", "Chess", "Soft Toys", "Swim In The Lake"], ""], 
+	["Vegetables", [DOMINOES, OUTSIDE, DOG, JUMPING_JACKS], ["Dominoes Pizza", "Touch Grass", "Dog.", "Force Them To Do Jumping Jacks"], ""], 
+	["Sticks", [SCHOOL, PARTYING, SCHOOL, SCHOOL], ["Go To School", "Go Partying!!", "???", "???"], ""],  #??? the diagram is so unclear
+	["Bowling", [DOWNTOWN, ROLLING, YOUR_FRIEND, SCHOOL], ["YEEHAW DOWNTOWN", "They See Me Rolling", "Your 'friend'", "School"], ""], 
+	["Boomerang", [YOUR_FRIEND, NEIGHBOUR_WINDOW, DOWNTOWN, ROLLING], ["Your 'friend'", "Yeet outta the neighbour's window", "Downtown", "Roll roll roll"], ""], 
+	["Paper airplane", [GROUND, IN_THE_AIR, FLYING, DOWNTOWN], ["To The Ground", "Float In The Air", "Soar Across The Skies", "Down down town"], ""], 
+	["Racing", [FISHING, FENCING, ANTARTICA, SURFACE], ["Fesh", "Fence", "Land Of The Anti-Bears", "To The Surface"], ""], 
+	["Toys", [ANTARTICA, SURFACE, IN_THE_AIR, DEEP_UNDERWATER], ["Antartica", "To The Surface", "In The Aiiirrr~", "Deep Underwater"], ""], 
+	["Flashlight", [DEEP_UNDERWATER, SURFACE, GROUND, CIVILIZATION], ["Choose this option", "To The Surface", "Grounded For LIFE", "Civilization"], ""], 
+	["Merry go round", [SPINNING, SCHOOL, DOWNTOWN, HOME], ["Spinspinspinspinspinspin", "School Them", "Down down down town", "Let's go home!"], ""], 
+	["Dominoes", [HOME, ROLLING, WALKING, SPINNING], ["Home home", "Rolllllipolliii", "Walk.", "Spinspinspin"], ""], 
+	["Outside", [DOWNTOWN, SCHOOL, WALKING, CHILDCARE], ["Become a cowboy", "School", "Walking", "Care by childs"], ""], 
+	["Dog", [WALKING, SPINNING, DIVING, CHILDCARE], ["Walking", "Spinning", "Diving", "Childcaring"], ""], 
+	["Jumping jacks", [SCHOOL, HOME, SURFACE, HOUSE], ["School", "Home", "Surface", "Become a house"], ""], 
+	["Running", [HOME, SCHOOL, DIVING, MT_EVEREST], ["Home", "School", "Diving", "Climb Mt Everest And Sleep With Trash"], ""], 
+	["Swimming", [SPINNING, SURFACE, MT_EVEREST, WALKING], ["Sping spin sping", "Surface", "Did you know there are penguins on Mt Everest?", "Walking"], ""], 
+	["Soft toys", [MT_EVEREST, CAT_HOME, HOUSE, SURFACE], ["Mt Evereeset", "The Home Of Cats", "House", "Surrrrface"], ""], 
+	["Chess", [WALKING, PARTYING, ROLLING, DOWNTOWN], ["Walk", "Party", "Roll", "Down"], ""], 
 	["Partying", [], [], ""], 
 	["School", [], [], ""], 
 	["Rolling", [], [], ""], 
@@ -143,4 +143,4 @@ func option_pressed(option_no: int) -> void:
 	cur_question_no += 1
 	update_options(cur_pet_type)
 	%QuestionLabel.text = questions[cur_question_no]
-	$PetSprite.texture = load(growth_adj_list[cur_pet_type][AdjList.SPRITE_PATH])
+	#$PetSprite.texture = load(growth_adj_list[cur_pet_type][AdjList.SPRITE_PATH])
