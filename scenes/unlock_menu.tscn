@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bkjogw8eblg76"]
 
 [ext_resource type="Theme" uid="uid://cx24sipxfypfq" path="res://assets/themes/main_theme.tres" id="1_l4mmi"]
-[ext_resource type="Texture2D" uid="uid://dba2an83mlpy6" path="res://assets/sprites/start_rock.png" id="2_7lyyn"]
+[ext_resource type="Script" uid="uid://cuxli7bwot6l1" path="res://scenes/unlock_menu.gd" id="2_n73kt"]
 
 [node name="UnlockMenu" type="Control" unique_id=234988467]
 layout_mode = 3
@@ -11,6 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_l4mmi")
+script = ExtResource("2_n73kt")
 
 [node name="Panel" type="Panel" parent="." unique_id=1407192142]
 layout_mode = 0
@@ -46,7 +47,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="Panel/VBoxContainer" unique_id=492144474]
 layout_mode = 2
-text = "Unlocked Creatures"
+text = "Unlocked Creatures (0/67)"
 horizontal_alignment = 1
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Panel/VBoxContainer" unique_id=1423039975]
@@ -54,161 +55,6 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="GridContainer" type="GridContainer" parent="Panel/VBoxContainer/ScrollContainer" unique_id=448635819]
+unique_name_in_owner = true
 layout_mode = 2
 columns = 3
-
-[node name="Panel" type="Panel" parent="Panel/VBoxContainer/ScrollContainer/GridContainer" unique_id=153201002]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/GridContainer/Panel" unique_id=1557411047]
-layout_mode = 1
-offset_left = 25.0
-offset_top = 25.0
-offset_right = 125.0
-offset_bottom = 125.0
-texture = ExtResource("2_7lyyn")
-expand_mode = 1
-
-[node name="Panel2" type="Panel" parent="Panel/VBoxContainer/ScrollContainer/GridContainer" unique_id=1729708927]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/GridContainer/Panel2" unique_id=440538641]
-layout_mode = 1
-offset_left = 25.0
-offset_top = 25.0
-offset_right = 125.0
-offset_bottom = 125.0
-texture = ExtResource("2_7lyyn")
-expand_mode = 1
-
-[node name="Panel3" type="Panel" parent="Panel/VBoxContainer/ScrollContainer/GridContainer" unique_id=1520717975]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/GridContainer/Panel3" unique_id=1406023095]
-layout_mode = 1
-offset_left = 25.0
-offset_top = 25.0
-offset_right = 125.0
-offset_bottom = 125.0
-texture = ExtResource("2_7lyyn")
-expand_mode = 1
-
-[node name="Panel4" type="Panel" parent="Panel/VBoxContainer/ScrollContainer/GridContainer" unique_id=1406527470]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/GridContainer/Panel4" unique_id=477987136]
-layout_mode = 1
-offset_left = 25.0
-offset_top = 25.0
-offset_right = 125.0
-offset_bottom = 125.0
-texture = ExtResource("2_7lyyn")
-expand_mode = 1
-
-[node name="Panel5" type="Panel" parent="Panel/VBoxContainer/ScrollContainer/GridContainer" unique_id=309451790]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/GridContainer/Panel5" unique_id=182016422]
-layout_mode = 1
-offset_left = 25.0
-offset_top = 25.0
-offset_right = 125.0
-offset_bottom = 125.0
-texture = ExtResource("2_7lyyn")
-expand_mode = 1
-
-[node name="Panel6" type="Panel" parent="Panel/VBoxContainer/ScrollContainer/GridContainer" unique_id=605266344]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/GridContainer/Panel6" unique_id=896080121]
-layout_mode = 1
-offset_left = 25.0
-offset_top = 25.0
-offset_right = 125.0
-offset_bottom = 125.0
-texture = ExtResource("2_7lyyn")
-expand_mode = 1
-
-[node name="Panel7" type="Panel" parent="Panel/VBoxContainer/ScrollContainer/GridContainer" unique_id=223043858]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/GridContainer/Panel7" unique_id=1013542234]
-layout_mode = 1
-offset_left = 25.0
-offset_top = 25.0
-offset_right = 125.0
-offset_bottom = 125.0
-texture = ExtResource("2_7lyyn")
-expand_mode = 1
-
-[node name="Panel8" type="Panel" parent="Panel/VBoxContainer/ScrollContainer/GridContainer" unique_id=668004986]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/GridContainer/Panel8" unique_id=1623969737]
-layout_mode = 1
-offset_left = 25.0
-offset_top = 25.0
-offset_right = 125.0
-offset_bottom = 125.0
-texture = ExtResource("2_7lyyn")
-expand_mode = 1
-
-[node name="Panel9" type="Panel" parent="Panel/VBoxContainer/ScrollContainer/GridContainer" unique_id=1990016025]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/GridContainer/Panel9" unique_id=439216868]
-layout_mode = 1
-offset_left = 25.0
-offset_top = 25.0
-offset_right = 125.0
-offset_bottom = 125.0
-texture = ExtResource("2_7lyyn")
-expand_mode = 1
-
-[node name="Panel10" type="Panel" parent="Panel/VBoxContainer/ScrollContainer/GridContainer" unique_id=1383633469]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/GridContainer/Panel10" unique_id=2099816370]
-layout_mode = 1
-offset_left = 25.0
-offset_top = 25.0
-offset_right = 125.0
-offset_bottom = 125.0
-texture = ExtResource("2_7lyyn")
-expand_mode = 1
-
-[node name="Panel11" type="Panel" parent="Panel/VBoxContainer/ScrollContainer/GridContainer" unique_id=1179846416]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/GridContainer/Panel11" unique_id=634131025]
-layout_mode = 1
-offset_left = 25.0
-offset_top = 25.0
-offset_right = 125.0
-offset_bottom = 125.0
-texture = ExtResource("2_7lyyn")
-expand_mode = 1
-
-[node name="Panel12" type="Panel" parent="Panel/VBoxContainer/ScrollContainer/GridContainer" unique_id=1475472884]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/GridContainer/Panel12" unique_id=234301505]
-layout_mode = 1
-offset_left = 25.0
-offset_top = 25.0
-offset_right = 125.0
-offset_bottom = 125.0
-texture = ExtResource("2_7lyyn")
-expand_mode = 1

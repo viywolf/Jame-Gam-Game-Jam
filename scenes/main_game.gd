@@ -148,6 +148,7 @@ func show_end_of_path() -> void:
 
 func option_pressed(option_no: int) -> void:
 	cur_pet_type = growth_adj_list[cur_pet_type][AdjList.GROWTH_PATH][option_no]
+	Pets.pet_unlock_status[cur_pet_type] = true
 	cur_question_no += 1
 	if cur_question_no < 3:
 		update_options(cur_pet_type)
