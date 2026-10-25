@@ -47,8 +47,7 @@ enum{
 	HOUSE,
 }
 
-# CHANGE THIS TO AN ARRAY OF STRINGS WHEN ALL SPRIET DONEEE!!!!!
-var pet_sprites: Array[Variant] = [
+var pet_sprites: Array[String] = [
 	"res://assets/sprites/start_rock.png",
 	"res://assets/sprites/stage_one_sausage.png",
 	"res://assets/sprites/stage_one_fish.png",
@@ -74,7 +73,6 @@ var pet_sprites: Array[Variant] = [
 	"res://assets/sprites/stage_three_school.png",
 	"res://assets/sprites/stage_three_bowl_ball.png",
 	"res://assets/sprites/stage_three_lil_guy.png",
-	"res://assets/sprites/stage_three_dead_fr.png",
 	"res://assets/sprites/stage_three_worm.png",
 	"res://assets/sprites/stage_three_hot_air_balloon.png",
 	"res://assets/sprites/stage_three_birb.png",
@@ -84,10 +82,8 @@ var pet_sprites: Array[Variant] = [
 	"res://assets/sprites/stage_three_penguin.png",
 	"res://assets/sprites/stage_three_dead_fr.png",
 	"res://assets/sprites/stage_three_blue_fish_two_fish.png",
-	"res://assets/sprites/stage_three_lil_guy.png",
 	"res://assets/sprites/stage_three_scribbles.png",
 	"res://assets/sprites/stage_three_glyph_man.png",
-	"res://assets/sprites/stage_three_lil_guy.png",
 	"res://assets/sprites/stage_three_cute_guy.png",
 	"res://assets/sprites/stage_three_rock_i_think.png",
 	"res://assets/sprites/stage_three_penguin.png",
