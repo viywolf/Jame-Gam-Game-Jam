@@ -15,6 +15,7 @@ offset_bottom = 40.0
 theme = ExtResource("2_d2op2")
 
 [node name="CurPetLabel" type="Label" parent="Control" unique_id=1263200302]
+visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
@@ -48,21 +49,25 @@ columns = 2
 custom_minimum_size = Vector2(360, 100)
 layout_mode = 2
 text = "Sausage"
+autowrap_mode = 3
 
 [node name="Option2" type="Button" parent="Control/VBoxContainer/OptionsGridContainer" unique_id=165392436]
 custom_minimum_size = Vector2(360, 100)
 layout_mode = 2
 text = "Bowling Ball"
+autowrap_mode = 3
 
 [node name="Option3" type="Button" parent="Control/VBoxContainer/OptionsGridContainer" unique_id=1325816604]
 custom_minimum_size = Vector2(360, 100)
 layout_mode = 2
 text = "One Whole Stingray"
+autowrap_mode = 3
 
 [node name="Option4" type="Button" parent="Control/VBoxContainer/OptionsGridContainer" unique_id=215605528]
 custom_minimum_size = Vector2(360, 100)
 layout_mode = 2
 text = "Doritos (for breakfast)"
+autowrap_mode = 3
 
 [node name="ReplayButton" type="Button" parent="Control/VBoxContainer" unique_id=1757404396]
 unique_name_in_owner = true
@@ -70,8 +75,17 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "Try Again!"
 
+[node name="ViewUnlockMenuButton" type="Button" parent="Control" unique_id=1331193844]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 12.0
+offset_right = 211.0
+offset_bottom = 57.0
+text = "See All Creatures"
+
 [node name="PetSprite" type="Sprite2D" parent="." unique_id=1214285515]
 position = Vector2(364, 303)
 texture = ExtResource("3_d2op2")
 
 [connection signal="pressed" from="Control/VBoxContainer/ReplayButton" to="." method="_on_replay_button_pressed"]
+[connection signal="pressed" from="Control/ViewUnlockMenuButton" to="." method="_on_view_unlock_menu_button_pressed"]

@@ -59,32 +59,31 @@ enum{
 }
 
 var growth_adj_list: Array[Array] = [
-	["Start", [SAUSAGE, EGGS, FISH, VEGETABLES], ["Sausage", "Eggs", "One Whole Stingray", "Brocolili"], "res://assets/sprites/start_rock.png"],
-	["Sausage", [PAPER_AIRPLANE, BOOMERANG, BOWLING, STICKS], ["Paper Airplane", "A Boomerang", "Let's Go Bowling", "Random Sticks From The Ground"], "res://assets/sprites/stage_one_sausage.png"], 
-	["Fish", [RACING, TOYS, FLASHLIGHT, MERRY_GO_ROUND], ["Race With The Other Creatures", "Random Toys", "A Flashlight", "Carnival Merry-Go-Round"], "res://assets/sprites/stage_one_fish.png"], 
-	["Eggs", [RUNNING, CHESS, SOFT_TOYS, SWIMMING], ["Run Around The Block", "Chess", "Soft Toys", "Swim In The Lake"], "res://assets/sprites/stage_one_eggs.png"], 
-	["Vegetables", [DOMINOES, OUTSIDE, DOG, JUMPING_JACKS], ["Dominoes Pizza", "Touch Grass", "Dog.", "Force Them To Do Jumping Jacks"], "res://assets/sprites/stage_one_veges.png"], 
-	["Sticks", [SCHOOL, PARTYING, SCHOOL, SCHOOL], ["Go To School", "Go Partying!!", "???", "???"], "res://assets/sprites/stage_two_stick.png"],  #??? the diagram is so unclear
-	["Bowling", [DOWNTOWN, ROLLING, LIL_GUY, SCHOOL], ["YEEHAW DOWNTOWN", "They See Me Rolling", "Your 'friend'", "School"], "res://assets/sprites/stage_two_bowling_pin.png"], 
-	["Boomerang", [LIL_GUY, DEAD, DOWNTOWN, ROLLING], ["Your 'friend'", "Yeet outta the neighbour's window", "Downtown", "Roll roll roll"], "res://assets/sprites/stage_two_boomerang.png"], 
-	["Paper airplane", [GROUND, IN_THE_AIR, FLYING, DOWNTOWN], ["To The Ground", "Float In The Air", "Soar Across The Skies", "Down down town"], "res://assets/sprites/stage_two_paper_airplane.png"], 
+	["Start", [SAUSAGE, EGGS, FISH, VEGETABLES], ["Sausage", "Eggs", "One Whole Stingray", "Brocolili"]],
+	["Sausage", [PAPER_AIRPLANE, BOOMERANG, BOWLING, STICKS], ["Paper Airplane", "A Boomerang", "Let's Go Bowling", "Random Sticks From The Ground"]], 
+	["Fish", [RACING, TOYS, FLASHLIGHT, MERRY_GO_ROUND], ["Race With The Other Creatures", "Random Toys", "A Flashlight", "Carnival Merry-Go-Round"]], 
+	["Eggs", [RUNNING, CHESS, SOFT_TOYS, SWIMMING], ["Run Around The Block", "Chess", "Soft Toys", "Swim In The Lake"]], 
+	["Vegetables", [DOMINOES, OUTSIDE, DOG, JUMPING_JACKS], ["Dominoes Pizza", "Touch Grass", "Dog.", "Force Them To Do Jumping Jacks"]], 
+	["Sticks", [SCHOOL, PARTYING, ROLLING, DOWNTOWN], ["Go To School", "Go Partying!!", "Go Rolling Around On The Ground", "Throw It Downtown!"]],
+	["Bowling", [DOWNTOWN, ROLLING, LIL_GUY, SCHOOL], ["YEEHAW DOWNTOWN", "They See Me Rolling", "Your 'friend'", "School"]], 
+	["Boomerang", [LIL_GUY, DEAD, DOWNTOWN, ROLLING], ["Your 'friend'", "Yeet outta the neighbour's window", "Downtown", "Roll roll roll"]], 
+	["Paper airplane", [GROUND, IN_THE_AIR, FLYING, DOWNTOWN], ["To The Ground", "Float In The Air", "Soar Across The Skies", "Down down town"]], 
 	["Racing", [FISHING, FENCING, ANTARTICA, DEAD], ["Fesh", "Fence", "Land Of The Anti-Bears", "To The Surface"], ], 
 	["Toys", [ANTARTICA, DEAD, IN_THE_AIR, DEEP_UNDERWATER], ["Antartica", "To The Surface", "In The Aiiirrr~", "Deep Underwater"], ], 
 	["Flashlight", [DEEP_UNDERWATER, DEAD, GROUND, LIL_GUY], ["Choose this option", "To The Surface", "Grounded For LIFE", "Civilization"], ], 
-	["Merry go round", [SPINNING, SCHOOL, DOWNTOWN, HOME], ["Spinspinspinspinspinspin", "School Them", "Down down down town", "Let's go home!"], "res://assets/sprites/stage_two_spinny_thing.png"], 
-	["Dominoes", [HOME, ROLLING, WALKING, SPINNING], ["Home home", "Rolllllipolliii", "Walk.", "Spinspinspin"], "res://assets/sprites/stage_two_dominoes.png"], 
-	["Outside", [DOWNTOWN, SCHOOL, WALKING, LIL_GUY], ["Become a cowboy", "School", "Walking", "Care by childs"], "res://assets/sprites/stage_two_tree.png"], 
-	["Dog", [WALKING, SPINNING, DIVING, LIL_GUY], ["Walking", "Spinning", "Diving", "Childcaring"], "res://assets/sprites/stage_two_dog.png"], 
-	["Jumping jacks", [SCHOOL, HOME, DEAD, HOUSE], ["School", "Home", "Surface", "Become a house"], "res://assets/sprites/stage_two_number_jack.png"], 
+	["Merry go round", [SPINNING, SCHOOL, DOWNTOWN, HOME], ["Spinspinspinspinspinspin", "School Them", "Down down down town", "Let's go home!"]], 
+	["Dominoes", [HOME, ROLLING, WALKING, SPINNING], ["Home home", "Rolllllipolliii", "Walk.", "Spinspinspin"]], 
+	["Outside", [DOWNTOWN, SCHOOL, WALKING, LIL_GUY], ["Become a cowboy", "School", "Walking", "Care by childs"]], 
+	["Dog", [WALKING, SPINNING, DIVING, LIL_GUY], ["Walking", "Spinning", "Diving", "Childcaring"]], 
+	["Jumping jacks", [SCHOOL, HOME, DEAD, HOUSE], ["School", "Home", "Surface", "Become a house"]], 
 	["Running", [HOME, SCHOOL, DIVING, MT_EVEREST], ["Home", "School", "Diving", "Climb Mt Everest And Sleep With Trash"], ], 
-	["Swimming", [SPINNING, DEAD, MT_EVEREST, WALKING], ["Sping spin sping", "Surface", "Did you know there are penguins on Mt Everest?", "Walking"], "res://assets/sprites/stage_two_sahrk.png"], 
-	["Soft toys", [MT_EVEREST, CAT_HOME, HOUSE, DEAD], ["Mt Evereeset", "The Home Of Cats", "House", "Surrrrface"], "res://assets/sprites/stage_two_soft_bear.png"], 
-	["Chess", [WALKING, PARTYING, ROLLING, DOWNTOWN], ["Walk", "Party", "Roll", "Down"], "res://assets/sprites/stage_two_chess.png"], 
+	["Swimming", [SPINNING, DEAD, MT_EVEREST, WALKING], ["Sping spin sping", "Surface", "Did you know there are penguins on Mt Everest?", "Walking"]], 
+	["Soft toys", [MT_EVEREST, CAT_HOME, HOUSE, DEAD], ["Mt Evereeset", "The Home Of Cats", "House", "Surrrrface"]], 
+	["Chess", [WALKING, PARTYING, ROLLING, DOWNTOWN], ["Walk", "Party", "Roll", "Down"]], 
 	["Partying", [], [], ], 
 	["School", [], [], ], 
 	["Rolling", [], [], ], 
 	["Lil guy", [], [], ], 
-	["Neighbour window", [], [], ], 
 	["Ground", [], [], ], 
 	["In the air", [], [], ], 
 	["Flying", [], [], ], 
@@ -114,6 +113,9 @@ func _ready() -> void:
 		var option: Button = %OptionsGridContainer.get_child(i)
 		option.pressed.connect(option_pressed.bind(i))
 	update_options(0)
+	
+	for i in range(growth_adj_list.size()):
+		growth_adj_list[i].append(Pets.pet_sprites[i])
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -163,3 +165,7 @@ func _on_replay_button_pressed() -> void:
 	cur_pet_type = 0
 	update_options(0)
 	$PetSprite.texture = load(growth_adj_list[cur_pet_type][AdjList.SPRITE_PATH])
+
+
+func _on_view_unlock_menu_button_pressed() -> void:
+	add_child(load("res://scenes/unlock_menu.tscn").instantiate())

@@ -1,5 +1,6 @@
 extends Control
 
+var unlocked_pets: int = 0
 
 func _ready() -> void:
 	for i in range(Pets.pet_sprites.size()):
@@ -16,8 +17,11 @@ func _ready() -> void:
 	for i in range(Pets.pet_sprites.size()):
 		if Pets.pet_unlock_status[i] == true:
 			show_pet(i)
+			unlocked_pets += 1
 		else:
 			hide_pet(i)
+			
+	%UnlockLabel.text = "Unlocked Creatures: (" + str(unlocked_pets) + "/" + str(Pets.pet_sprites.size()) + ")"
 
 
 func hide_pet(pet_no: int) -> void:
