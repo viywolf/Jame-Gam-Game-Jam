@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bcwi30c53qvcd" path="res://scenes/cutscene.gd" id="1_a320b"]
 [ext_resource type="Texture2D" uid="uid://dba2an83mlpy6" path="res://assets/sprites/start_rock.png" id="1_edmg7"]
+[ext_resource type="Texture2D" uid="uid://b2pnxvebc4vqd" path="res://assets/Background.png" id="2_2bm7f"]
 [ext_resource type="Theme" uid="uid://cx24sipxfypfq" path="res://assets/themes/main_theme.tres" id="3_0sipp"]
 
 [sub_resource type="Animation" id="Animation_a320b"]
@@ -67,6 +68,11 @@ _data = {
 
 [node name="Cutscene" type="Node2D" unique_id=503042076]
 script = ExtResource("1_a320b")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1574122917]
+position = Vector2(2, -81)
+texture = ExtResource("2_2bm7f")
+centered = false
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=306075517]
 position = Vector2(396, -172)

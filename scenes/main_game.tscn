@@ -1,11 +1,17 @@
 [gd_scene format=3 uid="uid://br5vawjfegq14"]
 
 [ext_resource type="Script" uid="uid://cjgwdhbjcyrj0" path="res://scenes/main_game.gd" id="1_72e8q"]
+[ext_resource type="Texture2D" uid="uid://b2pnxvebc4vqd" path="res://assets/Background.png" id="2_0rdsr"]
 [ext_resource type="Theme" uid="uid://cx24sipxfypfq" path="res://assets/themes/main_theme.tres" id="2_d2op2"]
 [ext_resource type="Texture2D" uid="uid://dba2an83mlpy6" path="res://assets/sprites/start_rock.png" id="3_d2op2"]
 
 [node name="MainGame" type="Node2D" unique_id=1433046858]
 script = ExtResource("1_72e8q")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=638343129]
+position = Vector2(2, -81)
+texture = ExtResource("2_0rdsr")
+centered = false
 
 [node name="Control" type="Control" parent="." unique_id=147993209]
 layout_mode = 3
