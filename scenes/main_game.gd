@@ -5,7 +5,7 @@ var cur_question_no: int = 0
 var questions: Array[String] = [
 	"What do you feed your creature?",
 	"What do you let your creature play with?",
-	"Which direction do you throw your creature?",
+	"What path do you send your creature down?",
 ]
 
 
@@ -36,7 +36,7 @@ enum{
 	SWIMMING,
 	SOFT_TOYS,
 	CHESS,
-	PARTYING,
+	WALKING,
 	SCHOOL,
 	ROLLING,
 	LIL_GUY,
@@ -47,13 +47,11 @@ enum{
 	FISHING,
 	FENCING,
 	ANTARTICA,
-	DEAD, #
+	DEAD,
 	DEEP_UNDERWATER,
 	SPINNING,
-	WALKING,
 	DIVING,
 	HOME,
-	MT_EVEREST,
 	CAT_HOME,
 	HOUSE,
 }
@@ -64,7 +62,7 @@ var growth_adj_list: Array[Array] = [
 	["Fish", [RACING, TOYS, FLASHLIGHT, MERRY_GO_ROUND], ["Race With The Other Creatures", "Random Toys", "A Flashlight", "Carnival Merry-Go-Round"]], 
 	["Eggs", [RUNNING, CHESS, SOFT_TOYS, SWIMMING], ["Run Around The Block", "Chess", "Soft Toys", "Swim In The Lake"]], 
 	["Vegetables", [DOMINOES, OUTSIDE, DOG, JUMPING_JACKS], ["Dominoes Pizza", "Touch Grass", "Dog.", "Force Them To Do Jumping Jacks"]], 
-	["Sticks", [SCHOOL, PARTYING, ROLLING, DOWNTOWN], ["Go To School", "Go Partying!!", "Go Rolling Around On The Ground", "Throw It Downtown!"]],
+	["Sticks", [SCHOOL, WALKING, ROLLING, DOWNTOWN], ["Go To School", "Go Partying!!", "Go Rolling Around On The Ground", "Throw It Downtown!"]],
 	["Bowling", [DOWNTOWN, ROLLING, LIL_GUY, SCHOOL], ["YEEHAW DOWNTOWN", "They See Me Rolling", "Your 'friend'", "School"]], 
 	["Boomerang", [LIL_GUY, DEAD, DOWNTOWN, ROLLING], ["Your 'friend'", "Yeet outta the neighbour's window", "Downtown", "Roll roll roll"]], 
 	["Paper airplane", [GROUND, IN_THE_AIR, FLYING, DOWNTOWN], ["To The Ground", "Float In The Air", "Soar Across The Skies", "Down down town"]], 
@@ -76,10 +74,10 @@ var growth_adj_list: Array[Array] = [
 	["Outside", [DOWNTOWN, SCHOOL, WALKING, LIL_GUY], ["Become a cowboy", "School", "Walking", "Care by childs"]], 
 	["Dog", [WALKING, SPINNING, DIVING, LIL_GUY], ["Walking", "Spinning", "Diving", "Childcaring"]], 
 	["Jumping jacks", [SCHOOL, HOME, DEAD, HOUSE], ["School", "Home", "Surface", "Become a house"]], 
-	["Running", [HOME, SCHOOL, DIVING, MT_EVEREST], ["Home", "School", "Diving", "Climb Mt Everest And Sleep With Trash"], ], 
-	["Swimming", [SPINNING, DEAD, MT_EVEREST, WALKING], ["Sping spin sping", "Surface", "Did you know there are penguins on Mt Everest?", "Walking"]], 
-	["Soft toys", [MT_EVEREST, CAT_HOME, HOUSE, DEAD], ["Mt Evereeset", "The Home Of Cats", "House", "Surrrrface"]], 
-	["Chess", [WALKING, PARTYING, ROLLING, DOWNTOWN], ["Walk", "Party", "Roll", "Down"]], 
+	["Running", [HOME, SCHOOL, DIVING, ANTARTICA], ["Home", "School", "Diving", "Climb Mt Everest And Sleep With Trash"], ], 
+	["Swimming", [SPINNING, DEAD, ANTARTICA, WALKING], ["Sping spin sping", "Surface", "Did you know there are penguins on Mt Everest?", "Walking"]], 
+	["Soft toys", [ANTARTICA, CAT_HOME, HOUSE, DEAD], ["Mt Evereeset", "The Home Of Cats", "House", "Surrrrface"]], 
+	["Chess", [WALKING, SCHOOL, ROLLING, DOWNTOWN], ["Party", "School", "Roll", "Down"]], 
 	["Partying", [], [], ], 
 	["School", [], [], ], 
 	["Rolling", [], [], ], 
@@ -94,10 +92,8 @@ var growth_adj_list: Array[Array] = [
 	["Surface", [], [], ], 
 	["Deep underwater", [], [], ], 
 	["Spinning", [], [], ], 
-	["Walking", [], [], ], 
 	["Diving", [], [], ], 
 	["Home", [], [], ], 
-	["Mt everest", [], [], ], 
 	["Cat's home", [], [], ], 
 	["House", [], [], ], 
 ]
