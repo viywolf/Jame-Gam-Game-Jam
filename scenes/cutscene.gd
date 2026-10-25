@@ -6,6 +6,8 @@ func _ready() -> void:
 	$AnimationPlayer.play("reveal")
 	await $AnimationPlayer.animation_finished
 	$Control.show()
+	if Pets.pet_unlock_status[0] == true:
+		$Control/NewLabel.show()
 	var tween = get_tree().create_tween()
 	tween.tween_property($Sprite2D, "position:y",$Sprite2D.position.y - 25, 2)
 	tween.tween_property($Sprite2D, "position:y",$Sprite2D.position.y + 50, 2)

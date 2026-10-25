@@ -116,6 +116,8 @@ func _ready() -> void:
 	
 	for i in range(growth_adj_list.size()):
 		growth_adj_list[i].append(Pets.pet_sprites[i])
+		
+	Pets.pet_unlock_status[0] = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -185,6 +187,7 @@ func _on_replay_button_pressed() -> void:
 	cur_pet_type = 0
 	update_options(0)
 	$PetSprite.texture = load(growth_adj_list[cur_pet_type][AdjList.SPRITE_PATH])
+	get_tree().change_scene_to_file("res://scenes/cutscene.tscn")
 
 
 func _on_view_unlock_menu_button_pressed() -> void:

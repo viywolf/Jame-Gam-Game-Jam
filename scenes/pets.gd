@@ -96,4 +96,3 @@ var pet_unlock_status: Array[bool]
 func _ready() -> void:
 	pet_unlock_status.resize(pet_sprites.size())
 	pet_unlock_status.fill(false)
-	pet_unlock_status[0] = true

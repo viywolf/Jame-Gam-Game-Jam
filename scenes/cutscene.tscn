@@ -94,6 +94,19 @@ text = "This is your lil' guy!
 Raise 'em well... "
 horizontal_alignment = 1
 
+[node name="NewLabel" type="Label" parent="Control" unique_id=1675520822]
+visible = false
+layout_mode = 0
+offset_left = 214.99998
+offset_top = 539.0
+offset_right = 671.0
+offset_bottom = 719.0
+rotation = -0.3310689
+theme = ExtResource("3_0sipp")
+theme_override_font_sizes/font_size = 60
+text = "New"
+horizontal_alignment = 1
+
 [node name="Button" type="Button" parent="Control" unique_id=269379812]
 layout_mode = 0
 offset_left = 268.0

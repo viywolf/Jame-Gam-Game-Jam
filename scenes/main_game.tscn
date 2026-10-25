@@ -22,9 +22,10 @@ offset_bottom = 23.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1589510281]
 layout_mode = 0
+offset_left = 27.0
 offset_top = 486.0
-offset_right = 750.0
-offset_bottom = 794.0
+offset_right = 722.0
+offset_bottom = 780.0
 theme = ExtResource("2_d2op2")
 
 [node name="QuestionLabel" type="Label" parent="Control/VBoxContainer" unique_id=973467728]
@@ -39,32 +40,30 @@ autowrap_mode = 3
 
 [node name="OptionsGridContainer" type="GridContainer" parent="Control/VBoxContainer" unique_id=2068681216]
 unique_name_in_owner = true
-visible = false
-custom_minimum_size = Vector2(750, 200)
 layout_mode = 2
 theme_override_constants/h_separation = 24
 columns = 2
 
 [node name="Option1" type="Button" parent="Control/VBoxContainer/OptionsGridContainer" unique_id=6777758]
-custom_minimum_size = Vector2(360, 100)
+custom_minimum_size = Vector2(330, 100)
 layout_mode = 2
 text = "Sausage"
 autowrap_mode = 3
 
 [node name="Option2" type="Button" parent="Control/VBoxContainer/OptionsGridContainer" unique_id=165392436]
-custom_minimum_size = Vector2(360, 100)
+custom_minimum_size = Vector2(330, 100)
 layout_mode = 2
 text = "Bowling Ball"
 autowrap_mode = 3
 
 [node name="Option3" type="Button" parent="Control/VBoxContainer/OptionsGridContainer" unique_id=1325816604]
-custom_minimum_size = Vector2(360, 100)
+custom_minimum_size = Vector2(330, 100)
 layout_mode = 2
 text = "One Whole Stingray"
 autowrap_mode = 3
 
 [node name="Option4" type="Button" parent="Control/VBoxContainer/OptionsGridContainer" unique_id=215605528]
-custom_minimum_size = Vector2(360, 100)
+custom_minimum_size = Vector2(330, 100)
 layout_mode = 2
 text = "Doritos (for breakfast)"
 autowrap_mode = 3
@@ -73,6 +72,7 @@ autowrap_mode = 3
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 80
 text = "Try Again!"
 
 [node name="ViewUnlockMenuButton" type="Button" parent="Control" unique_id=1331193844]
