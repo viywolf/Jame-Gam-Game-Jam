@@ -110,6 +110,23 @@ expand_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vhku8"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0f6i3"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.62833846, 0.5081568, 0.39039347, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.22111315, 0.082082085, 0.042858303, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 5
+
 [resource]
 Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
 Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
@@ -147,3 +164,4 @@ Label/font_sizes/font_size = 36
 Label/fonts/font = ExtResource("1_3f3va")
 Label/styles/focus = SubResource("StyleBoxFlat_lxams")
 Label/styles/normal = SubResource("StyleBoxEmpty_vhku8")
+Panel/styles/panel = SubResource("StyleBoxFlat_0f6i3")
