@@ -146,6 +146,7 @@ func show_end_of_path() -> void:
 func option_pressed(option_no: int) -> void:
 	%OptionsGridContainer.hide()
 	%QuestionLabel.hide()
+	AudioStreamPlayerGlobal.play_drum_roll()
 	var tween = get_tree().create_tween()
 	tween.tween_property($PetSprite, "rotation", 0, 0.5)
 	tween.tween_property($PetSprite, "rotation", 8*PI, 1.5)

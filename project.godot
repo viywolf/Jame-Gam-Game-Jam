@@ -11,13 +11,15 @@ config_version=5
 [application]
 
 config/name="Jame Gam Game Jam"
-run/main_scene="uid://br5vawjfegq14"
+run/main_scene="uid://dqkjdfcp762dh"
 config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/bg_color=Color(1, 1, 1, 1)
 config/icon="res://assets/icon.svg"
 
 [autoload]
 
 Pets="*uid://bdqb803c2hh8b"
+AudioStreamPlayerGlobal="*uid://c2vjh63aqx7ji"
 
 [display]
 
@@ -39,3 +41,4 @@ enabled=PackedStringArray("res://.godot/scenetime/plugin.cfg", "res://addons/god
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.7584035, 0.7072514, 0.5461428, 1)

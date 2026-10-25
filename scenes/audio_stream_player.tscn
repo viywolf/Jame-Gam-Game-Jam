@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c2vjh63aqx7ji"]
+
+[ext_resource type="AudioStream" uid="uid://ckil8kjuxn24" path="res://assets/audio/JameGamGameJamLilGuyLoop.mp3" id="1_nbeep"]
+[ext_resource type="Script" uid="uid://bl8dd028680cn" path="res://scenes/audio.gd" id="2_6eoa2"]
+[ext_resource type="AudioStream" uid="uid://cvru3mq814ibf" path="res://assets/audio/JameGamDrumRoll.mp3" id="3_gdoi2"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=362727704]
+stream = ExtResource("1_nbeep")
+autoplay = true
+script = ExtResource("2_6eoa2")
+
+[node name="Drumroll" type="AudioStreamPlayer" parent="." unique_id=918158074]
+stream = ExtResource("3_gdoi2")

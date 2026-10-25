@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bxcqmyu540fgn"]
 
-[ext_resource type="Texture2D" uid="uid://b7hiipbnl6r8v" path="res://assets/icon.svg" id="1_fgkus"]
+[ext_resource type="Texture2D" uid="uid://cr5s2esgl338g" path="res://assets/icon.svg" id="1_fgkus"]
 
 [node name="TitleScreen" type="Control" unique_id=321301474]
 layout_mode = 3
@@ -30,5 +30,6 @@ layout_mode = 2
 text = "Start Game"
 
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=88764538]
+visible = false
 layout_mode = 2
 text = "Quit Game"
