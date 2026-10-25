@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck37i8ctbleps"
-path="res://.godot/imported/stage_three_Layer Comp 15.png-c4548d22e18264f659b904c3d1e94c1e.ctex"
+uid="uid://bm5fjgtgqnvep"
+path="res://.godot/imported/stage_three_blue_fish_two_fish.png-c9e5288e35800da9688d2cde0b9cf2dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_three_Layer Comp 15.png"
-dest_files=["res://.godot/imported/stage_three_Layer Comp 15.png-c4548d22e18264f659b904c3d1e94c1e.ctex"]
+source_file="res://assets/sprites/stage_three_blue_fish_two_fish.png"
+dest_files=["res://.godot/imported/stage_three_blue_fish_two_fish.png-c9e5288e35800da9688d2cde0b9cf2dd.ctex"]
 
 [params]
 

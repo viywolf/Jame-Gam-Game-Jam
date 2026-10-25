@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b87k8g7p75ysw"
-path="res://.godot/imported/stage_three_Layer Comp 11.png-2abad528a064c4f66cdc9b76be156315.ctex"
+uid="uid://bgrs8tltiwrcf"
+path="res://.godot/imported/stage_three_cute_guy.png-6f12938208b5083ff4eb75c94ab401b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_three_Layer Comp 11.png"
-dest_files=["res://.godot/imported/stage_three_Layer Comp 11.png-2abad528a064c4f66cdc9b76be156315.ctex"]
+source_file="res://assets/sprites/stage_three_cute_guy.png"
+dest_files=["res://.godot/imported/stage_three_cute_guy.png-6f12938208b5083ff4eb75c94ab401b6.ctex"]
 
 [params]
 

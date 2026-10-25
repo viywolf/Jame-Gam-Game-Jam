@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq8jsn5ulxecs"
-path="res://.godot/imported/stage_three_Layer Comp 3.png-30741b5d26233d3bcca6fc0839ccd1b5.ctex"
+uid="uid://b87k8g7p75ysw"
+path="res://.godot/imported/stage_three_scribbles.png-b3048c2f486f25eab8cde104b74d3018.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_three_Layer Comp 3.png"
-dest_files=["res://.godot/imported/stage_three_Layer Comp 3.png-30741b5d26233d3bcca6fc0839ccd1b5.ctex"]
+source_file="res://assets/sprites/stage_three_scribbles.png"
+dest_files=["res://.godot/imported/stage_three_scribbles.png-b3048c2f486f25eab8cde104b74d3018.ctex"]
 
 [params]
 

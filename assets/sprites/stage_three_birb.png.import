@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbjhjyffqfhan"
-path="res://.godot/imported/stage_three_Layer Comp 12.png-ce58637473daad29310cac070fc69e64.ctex"
+uid="uid://bq8jsn5ulxecs"
+path="res://.godot/imported/stage_three_birb.png-f61635aa81a324be51adeb1e09af5cf4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_three_Layer Comp 12.png"
-dest_files=["res://.godot/imported/stage_three_Layer Comp 12.png-ce58637473daad29310cac070fc69e64.ctex"]
+source_file="res://assets/sprites/stage_three_birb.png"
+dest_files=["res://.godot/imported/stage_three_birb.png-f61635aa81a324be51adeb1e09af5cf4.ctex"]
 
 [params]
 

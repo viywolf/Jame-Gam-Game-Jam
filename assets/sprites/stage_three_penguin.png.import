@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bm5fjgtgqnvep"
-path="res://.godot/imported/stage_three_Layer Comp 9.png-067111ad4c245f7fd7999e56f6ea450a.ctex"
+uid="uid://bt7vb758jgi4y"
+path="res://.godot/imported/stage_three_penguin.png-fd4974feb196061022f433f1a6f44aee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_three_Layer Comp 9.png"
-dest_files=["res://.godot/imported/stage_three_Layer Comp 9.png-067111ad4c245f7fd7999e56f6ea450a.ctex"]
+source_file="res://assets/sprites/stage_three_penguin.png"
+dest_files=["res://.godot/imported/stage_three_penguin.png-fd4974feb196061022f433f1a6f44aee.ctex"]
 
 [params]
 

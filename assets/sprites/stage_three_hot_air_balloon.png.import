@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biufyvstc5o5o"
-path="res://.godot/imported/stage_three_Layer Comp 10.png-f798e1b764261556341e23182817e74e.ctex"
+uid="uid://djpx73upjs03f"
+path="res://.godot/imported/stage_three_hot_air_balloon.png-109d2517267a533ad97dd3af31c3efd9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_three_Layer Comp 10.png"
-dest_files=["res://.godot/imported/stage_three_Layer Comp 10.png-f798e1b764261556341e23182817e74e.ctex"]
+source_file="res://assets/sprites/stage_three_hot_air_balloon.png"
+dest_files=["res://.godot/imported/stage_three_hot_air_balloon.png-109d2517267a533ad97dd3af31c3efd9.ctex"]
 
 [params]
 

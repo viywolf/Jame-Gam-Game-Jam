@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8y5h7brpvwde"
-path="res://.godot/imported/stage_three_Layer Comp 13.png-65291fe41ee920f74c1d1b83ea800fab.ctex"
+uid="uid://dq85n55ci1jpu"
+path="res://.godot/imported/stage_three_yeehaw.png-dd5cf989035e7e777029bff45abe001a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_three_Layer Comp 13.png"
-dest_files=["res://.godot/imported/stage_three_Layer Comp 13.png-65291fe41ee920f74c1d1b83ea800fab.ctex"]
+source_file="res://assets/sprites/stage_three_yeehaw.png"
+dest_files=["res://.godot/imported/stage_three_yeehaw.png-dd5cf989035e7e777029bff45abe001a.ctex"]
 
 [params]
 
