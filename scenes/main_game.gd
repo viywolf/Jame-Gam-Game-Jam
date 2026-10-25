@@ -144,8 +144,25 @@ func show_end_of_path() -> void:
 	
 
 func option_pressed(option_no: int) -> void:
+	%OptionsGridContainer.hide()
+	%QuestionLabel.hide()
+	var tween = get_tree().create_tween()
+	tween.tween_property($PetSprite, "rotation", 0, 0.5)
+	tween.tween_property($PetSprite, "rotation", 8*PI, 1.5)
+	tween.tween_property($PetSprite, "rotation", 0, 0.5)
+	await tween.finished
 	cur_pet_type = growth_adj_list[cur_pet_type][AdjList.GROWTH_PATH][option_no]
 	Pets.pet_unlock_status[cur_pet_type] = true
+		
+	if growth_adj_list[cur_pet_type].size() < 4:
+		$PetSprite.texture = load("res://assets/icon.svg")
+	else:
+		$PetSprite.texture = load(growth_adj_list[cur_pet_type][AdjList.SPRITE_PATH])
+	
+	tween = get_tree().create_tween()
+	tween.tween_property($PetSprite, "rotation", 0, 1.5)
+	await tween.finished
+	
 	cur_question_no += 1
 	if cur_question_no < 3:
 		update_options(cur_pet_type)
@@ -153,11 +170,7 @@ func option_pressed(option_no: int) -> void:
 		show_end_of_path()
 		%QuestionLabel.text = "Congrats! You have sucessfully raised your creature (?)"
 		
-	if growth_adj_list[cur_pet_type].size() < 4:
-		$PetSprite.texture = load("res://assets/icon.svg")
-	else:
-		$PetSprite.texture = load(growth_adj_list[cur_pet_type][AdjList.SPRITE_PATH])
-	
+	%QuestionLabel.show()
 
 
 func _on_replay_button_pressed() -> void:
