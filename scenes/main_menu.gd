@@ -8,7 +8,7 @@ func _process(delta: float) -> void:
 	var rotation_offset: float = pingpong(cur_count, PI/8)
 	$Logo.rotation = rotation_offset - PI/16
 	var position_offset: float = pingpong(cur_count * 100, 20)
-	$Logo.position.y = position_offset + 200
+	$Logo.position.y = position_offset + 270
 
 
 func _on_start_button_pressed() -> void:
