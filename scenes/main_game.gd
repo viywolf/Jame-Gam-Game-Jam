@@ -133,14 +133,34 @@ func _process(delta: float) -> void:
 
 
 func update_options(pet_type: int) -> void:
+	%ReplayButton.hide()
+	%OptionsGridContainer.show()
+	%QuestionLabel.text = questions[cur_question_no]
 	for i in range(%OptionsGridContainer.get_child_count()):
 		var option: Button = %OptionsGridContainer.get_child(i)
 		option.text = growth_adj_list[pet_type][AdjList.OPTIONS][i]
 
 
+func show_end_of_path() -> void:
+	%OptionsGridContainer.hide()
+	%ReplayButton.show()
+	
+
 func option_pressed(option_no: int) -> void:
 	cur_pet_type = growth_adj_list[cur_pet_type][AdjList.GROWTH_PATH][option_no]
 	cur_question_no += 1
-	update_options(cur_pet_type)
-	%QuestionLabel.text = questions[cur_question_no]
+	if cur_question_no < 3:
+		update_options(cur_pet_type)
+	else:
+		show_end_of_path()
+		%QuestionLabel.text = "Congrats! You have sucessfully raised your creature (?)"
+	# Uncomment this when all sprites have a sprite yknow
 	#$PetSprite.texture = load(growth_adj_list[cur_pet_type][AdjList.SPRITE_PATH])
+	
+
+
+func _on_replay_button_pressed() -> void:
+	cur_question_no = 0
+	cur_pet_type = 0
+	update_options(0)
+	$PetSprite.texture = load(growth_adj_list[cur_pet_type][AdjList.SPRITE_PATH])
