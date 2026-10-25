@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cjgwdhbjcyrj0" path="res://scenes/main_game.gd" id="1_72e8q"]
 [ext_resource type="Texture2D" uid="uid://b7hiipbnl6r8v" path="res://assets/icon.svg" id="1_s3esy"]
+[ext_resource type="Theme" uid="uid://cx24sipxfypfq" path="res://assets/themes/main_theme.tres" id="2_d2op2"]
 
 [node name="MainGame" type="Node2D" unique_id=1433046858]
 script = ExtResource("1_72e8q")
@@ -11,6 +12,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+theme = ExtResource("2_d2op2")
 
 [node name="CurPetLabel" type="Label" parent="Control" unique_id=1263200302]
 layout_mode = 0
@@ -22,14 +24,17 @@ layout_mode = 0
 offset_top = 486.0
 offset_right = 750.0
 offset_bottom = 794.0
+theme = ExtResource("2_d2op2")
 
 [node name="QuestionLabel" type="Label" parent="Control/VBoxContainer" unique_id=973467728]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
+theme = ExtResource("2_d2op2")
 text = "Feed your pet a good meal!"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="OptionsGridContainer" type="GridContainer" parent="Control/VBoxContainer" unique_id=2068681216]
 unique_name_in_owner = true
