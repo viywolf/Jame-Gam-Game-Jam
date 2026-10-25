@@ -33,6 +33,7 @@ vertical_alignment = 1
 
 [node name="OptionsGridContainer" type="GridContainer" parent="Control/VBoxContainer" unique_id=2068681216]
 unique_name_in_owner = true
+visible = false
 custom_minimum_size = Vector2(750, 200)
 layout_mode = 2
 theme_override_constants/h_separation = 24
@@ -58,7 +59,14 @@ custom_minimum_size = Vector2(360, 100)
 layout_mode = 2
 text = "Doritos (for breakfast)"
 
+[node name="ReplayButton" type="Button" parent="Control/VBoxContainer" unique_id=1757404396]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+text = "Try Again!"
+
 [node name="PetSprite" type="Sprite2D" parent="." unique_id=1214285515]
 position = Vector2(364, 303)
-scale = Vector2(2, 2)
 texture = ExtResource("1_s3esy")
+
+[connection signal="pressed" from="Control/VBoxContainer/ReplayButton" to="." method="_on_replay_button_pressed"]
