@@ -3,9 +3,9 @@ extends Node2D
 var cur_question_no: int = 0
 
 var questions: Array[String] = [
-	"What do you feed your creature?",
-	"What do you let your creature play with?",
-	"What path do you send your creature down?",
+	"Feed the creature a good meal!",
+	"Play with the creature!",
+	"Send the creature down a good path!",
 ]
 
 
@@ -123,7 +123,7 @@ func _process(delta: float) -> void:
 	var rotation_offset: float = pingpong(cur_count, PI/8)
 	$PetSprite.rotation = rotation_offset - PI/16
 	var position_offset: float = pingpong(cur_count * 100, 20)
-	$PetSprite.position.y = position_offset + 300
+	$PetSprite.position.y = position_offset + 250
 	%NewUnlockLabel.rotation = rotation_offset / 2 - PI/32
 
 
