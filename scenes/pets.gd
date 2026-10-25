@@ -38,11 +38,9 @@ enum{
 	DEEP_UNDERWATER,
 	CIVILIZATION,
 	SPINNING,
-	WALKING,
 	CHILDCARE,
 	DIVING,
 	HOME,
-	MT_EVEREST,
 	CAT_HOME,
 	HOUSE,
 }
@@ -83,10 +81,8 @@ var pet_sprites: Array[String] = [
 	"res://assets/sprites/stage_three_dead_fr.png",
 	"res://assets/sprites/stage_three_blue_fish_two_fish.png",
 	"res://assets/sprites/stage_three_scribbles.png",
-	"res://assets/sprites/stage_three_glyph_man.png",
 	"res://assets/sprites/stage_three_cute_guy.png",
 	"res://assets/sprites/stage_three_rock_i_think.png",
-	"res://assets/sprites/stage_three_penguin.png",
 	"res://assets/sprites/stage_three_cat.png",
 	"res://assets/sprites/stage_three_house.png",
 ]
