@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://buxfdtw4lcq7i"
-path="res://.godot/imported/stage_two_Layer Comp 10.png-6bb55700b749f0c46a2608f5f0974c4f.ctex"
+uid="uid://w4ke1u4q0ixx"
+path="res://.godot/imported/stage_two_stick.png-1346943cd25bc3cb1e15bf1a88bee6a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_two_Layer Comp 10.png"
-dest_files=["res://.godot/imported/stage_two_Layer Comp 10.png-6bb55700b749f0c46a2608f5f0974c4f.ctex"]
+source_file="res://assets/sprites/stage_two_stick.png"
+dest_files=["res://.godot/imported/stage_two_stick.png-1346943cd25bc3cb1e15bf1a88bee6a9.ctex"]
 
 [params]
 

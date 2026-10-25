@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://irnps4r4u7an"
-path="res://.godot/imported/stage_two_Layer Comp 16.png-6579dcaa9f2c44465ebd22615f198b43.ctex"
+uid="uid://btrbr5ppbu6ab"
+path="res://.godot/imported/stage_two_submarine.png-358c33816ce00908ed9ad924e5c29997.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_two_Layer Comp 16.png"
-dest_files=["res://.godot/imported/stage_two_Layer Comp 16.png-6579dcaa9f2c44465ebd22615f198b43.ctex"]
+source_file="res://assets/sprites/stage_two_submarine.png"
+dest_files=["res://.godot/imported/stage_two_submarine.png-358c33816ce00908ed9ad924e5c29997.ctex"]
 
 [params]
 

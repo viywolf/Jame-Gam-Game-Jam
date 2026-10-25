@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1jbg267qvk5t"
-path="res://.godot/imported/stage_one_Layer Comp 2.png-c65af9f7c41a2bf033d1e3f937a5266f.ctex"
+uid="uid://b1bad5jkngh37"
+path="res://.godot/imported/stage_two_spinny_thing.png-c82f298d29fb1a3aa5d9e07340552fc4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_one_Layer Comp 2.png"
-dest_files=["res://.godot/imported/stage_one_Layer Comp 2.png-c65af9f7c41a2bf033d1e3f937a5266f.ctex"]
+source_file="res://assets/sprites/stage_two_spinny_thing.png"
+dest_files=["res://.godot/imported/stage_two_spinny_thing.png-c82f298d29fb1a3aa5d9e07340552fc4.ctex"]
 
 [params]
 

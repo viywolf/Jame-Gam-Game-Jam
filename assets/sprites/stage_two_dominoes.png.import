@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://birrgnvmsk3u3"
-path="res://.godot/imported/stage_two_Layer Comp 15.png-d19fd1ba5f1287d696ddf314bcefeda1.ctex"
+uid="uid://hdgyma50umdj"
+path="res://.godot/imported/stage_two_dominoes.png-2ea25e5958a7fd542d71b7ff8f39cf7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_two_Layer Comp 15.png"
-dest_files=["res://.godot/imported/stage_two_Layer Comp 15.png-d19fd1ba5f1287d696ddf314bcefeda1.ctex"]
+source_file="res://assets/sprites/stage_two_dominoes.png"
+dest_files=["res://.godot/imported/stage_two_dominoes.png-2ea25e5958a7fd542d71b7ff8f39cf7e.ctex"]
 
 [params]
 

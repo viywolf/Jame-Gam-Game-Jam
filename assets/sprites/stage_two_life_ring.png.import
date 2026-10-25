@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1bad5jkngh37"
-path="res://.godot/imported/stage_two_Layer Comp 8.png-f7e9382e30477213f7abb1790fbe3db8.ctex"
+uid="uid://dij8kd5jumabe"
+path="res://.godot/imported/stage_two_life_ring.png-7aff7776cc04b3af0dce101cd68bfa1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_two_Layer Comp 8.png"
-dest_files=["res://.godot/imported/stage_two_Layer Comp 8.png-f7e9382e30477213f7abb1790fbe3db8.ctex"]
+source_file="res://assets/sprites/stage_two_life_ring.png"
+dest_files=["res://.godot/imported/stage_two_life_ring.png-7aff7776cc04b3af0dce101cd68bfa1d.ctex"]
 
 [params]
 

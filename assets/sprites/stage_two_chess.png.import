@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crgnrh8syoxyy"
-path="res://.godot/imported/stage_two_Layer Comp 3.png-2f697793da908fd766bfb74b0af49224.ctex"
+uid="uid://irnps4r4u7an"
+path="res://.godot/imported/stage_two_chess.png-56f26ac01d3fdd48320ab114d6bf788d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_two_Layer Comp 3.png"
-dest_files=["res://.godot/imported/stage_two_Layer Comp 3.png-2f697793da908fd766bfb74b0af49224.ctex"]
+source_file="res://assets/sprites/stage_two_chess.png"
+dest_files=["res://.godot/imported/stage_two_chess.png-56f26ac01d3fdd48320ab114d6bf788d.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6c1w5jtvvs1t"
-path="res://.godot/imported/stage_two_Layer Comp 6.png-05b1c023b0c757efe3947ed0bb941466.ctex"
+path="res://.godot/imported/stage_two_jellyfish.png-f54f1d194967246f0d2496d7c019b6d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_two_Layer Comp 6.png"
-dest_files=["res://.godot/imported/stage_two_Layer Comp 6.png-05b1c023b0c757efe3947ed0bb941466.ctex"]
+source_file="res://assets/sprites/stage_two_jellyfish.png"
+dest_files=["res://.godot/imported/stage_two_jellyfish.png-f54f1d194967246f0d2496d7c019b6d6.ctex"]
 
 [params]
 

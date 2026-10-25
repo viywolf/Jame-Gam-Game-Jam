@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bif8mwexv4cus"
-path="res://.godot/imported/stage_one_Layer Comp 1.png-f15cfb2407a204565b024bf898414609.ctex"
+uid="uid://crgnrh8syoxyy"
+path="res://.godot/imported/stage_two_boomerang.png-e42490a594e89f91c0e830781c849dcd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_one_Layer Comp 1.png"
-dest_files=["res://.godot/imported/stage_one_Layer Comp 1.png-f15cfb2407a204565b024bf898414609.ctex"]
+source_file="res://assets/sprites/stage_two_boomerang.png"
+dest_files=["res://.godot/imported/stage_two_boomerang.png-e42490a594e89f91c0e830781c849dcd.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btrbr5ppbu6ab"
-path="res://.godot/imported/stage_two_Layer Comp 7.png-568efdb59baed19f05d480db36f50071.ctex"
+uid="uid://cgaol530mo0f4"
+path="res://.godot/imported/stage_two_paper_airplane.png-390c26f51dbe3b64aded7b5d1a872e51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_two_Layer Comp 7.png"
-dest_files=["res://.godot/imported/stage_two_Layer Comp 7.png-568efdb59baed19f05d480db36f50071.ctex"]
+source_file="res://assets/sprites/stage_two_paper_airplane.png"
+dest_files=["res://.godot/imported/stage_two_paper_airplane.png-390c26f51dbe3b64aded7b5d1a872e51.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chgamv14kubek"
-path="res://.godot/imported/stage_one_Layer Comp 4.png-8f1099c825e66ada00182551d57e1121.ctex"
+uid="uid://d1jbg267qvk5t"
+path="res://.godot/imported/stage_one_fish.png-337a5e421bbc689d35f274e1b27fca62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_one_Layer Comp 4.png"
-dest_files=["res://.godot/imported/stage_one_Layer Comp 4.png-8f1099c825e66ada00182551d57e1121.ctex"]
+source_file="res://assets/sprites/stage_one_fish.png"
+dest_files=["res://.godot/imported/stage_one_fish.png-337a5e421bbc689d35f274e1b27fca62.ctex"]
 
 [params]
 

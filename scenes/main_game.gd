@@ -62,50 +62,50 @@ enum{
 }
 
 var growth_adj_list: Array[Array] = [
-	["Start", [SAUSAGE, EGGS, FISH, VEGETABLES], ["Sausage", "Eggs", "One Whole Stingray", "Brocolili"], "res://assets/icon.svg"],
-	["Sausage", [PAPER_AIRPLANE, BOOMERANG, BOWLING, STICKS], ["Paper Airplane", "A Boomerang", "Let's Go Bowling", "Random Sticks From The Ground"], ""], 
-	["Fish", [RACING, TOYS, FLASHLIGHT, MERRY_GO_ROUND], ["Race With The Other Creatures", "Random Toys", "A Flashlight", "Carnival Merry-Go-Round"], ""], 
-	["Eggs", [RUNNING, CHESS, SOFT_TOYS, SWIMMING], ["Run Around The Block", "Chess", "Soft Toys", "Swim In The Lake"], ""], 
-	["Vegetables", [DOMINOES, OUTSIDE, DOG, JUMPING_JACKS], ["Dominoes Pizza", "Touch Grass", "Dog.", "Force Them To Do Jumping Jacks"], ""], 
-	["Sticks", [SCHOOL, PARTYING, SCHOOL, SCHOOL], ["Go To School", "Go Partying!!", "???", "???"], ""],  #??? the diagram is so unclear
-	["Bowling", [DOWNTOWN, ROLLING, YOUR_FRIEND, SCHOOL], ["YEEHAW DOWNTOWN", "They See Me Rolling", "Your 'friend'", "School"], ""], 
-	["Boomerang", [YOUR_FRIEND, NEIGHBOUR_WINDOW, DOWNTOWN, ROLLING], ["Your 'friend'", "Yeet outta the neighbour's window", "Downtown", "Roll roll roll"], ""], 
-	["Paper airplane", [GROUND, IN_THE_AIR, FLYING, DOWNTOWN], ["To The Ground", "Float In The Air", "Soar Across The Skies", "Down down town"], ""], 
-	["Racing", [FISHING, FENCING, ANTARTICA, SURFACE], ["Fesh", "Fence", "Land Of The Anti-Bears", "To The Surface"], ""], 
-	["Toys", [ANTARTICA, SURFACE, IN_THE_AIR, DEEP_UNDERWATER], ["Antartica", "To The Surface", "In The Aiiirrr~", "Deep Underwater"], ""], 
-	["Flashlight", [DEEP_UNDERWATER, SURFACE, GROUND, CIVILIZATION], ["Choose this option", "To The Surface", "Grounded For LIFE", "Civilization"], ""], 
-	["Merry go round", [SPINNING, SCHOOL, DOWNTOWN, HOME], ["Spinspinspinspinspinspin", "School Them", "Down down down town", "Let's go home!"], ""], 
-	["Dominoes", [HOME, ROLLING, WALKING, SPINNING], ["Home home", "Rolllllipolliii", "Walk.", "Spinspinspin"], ""], 
-	["Outside", [DOWNTOWN, SCHOOL, WALKING, CHILDCARE], ["Become a cowboy", "School", "Walking", "Care by childs"], ""], 
-	["Dog", [WALKING, SPINNING, DIVING, CHILDCARE], ["Walking", "Spinning", "Diving", "Childcaring"], ""], 
-	["Jumping jacks", [SCHOOL, HOME, SURFACE, HOUSE], ["School", "Home", "Surface", "Become a house"], ""], 
-	["Running", [HOME, SCHOOL, DIVING, MT_EVEREST], ["Home", "School", "Diving", "Climb Mt Everest And Sleep With Trash"], ""], 
-	["Swimming", [SPINNING, SURFACE, MT_EVEREST, WALKING], ["Sping spin sping", "Surface", "Did you know there are penguins on Mt Everest?", "Walking"], ""], 
-	["Soft toys", [MT_EVEREST, CAT_HOME, HOUSE, SURFACE], ["Mt Evereeset", "The Home Of Cats", "House", "Surrrrface"], ""], 
-	["Chess", [WALKING, PARTYING, ROLLING, DOWNTOWN], ["Walk", "Party", "Roll", "Down"], ""], 
-	["Partying", [], [], ""], 
-	["School", [], [], ""], 
-	["Rolling", [], [], ""], 
-	["Your friend", [], [], ""], 
-	["Neighbour window", [], [], ""], 
-	["Ground", [], [], ""], 
-	["In the air", [], [], ""], 
-	["Flying", [], [], ""], 
-	["Downtown", [], [], ""], 
-	["Fishing", [], [], ""], 
-	["Fencing", [], [], ""], 
-	["Antartica", [], [], ""], 
-	["Surface", [], [], ""], 
-	["Deep underwater", [], [], ""], 
-	["Civilisation", [], [], ""], 
-	["Spinning", [], [], ""], 
-	["Walking", [], [], ""], 
-	["Childcare", [], [], ""], 
-	["Diving", [], [], ""], 
-	["Home", [], [], ""], 
-	["Mt everest", [], [], ""], 
-	["Cat's home", [], [], ""], 
-	["House", [], [], ""], 
+	["Start", [SAUSAGE, EGGS, FISH, VEGETABLES], ["Sausage", "Eggs", "One Whole Stingray", "Brocolili"], "res://assets/sprites/start_rock.png"],
+	["Sausage", [PAPER_AIRPLANE, BOOMERANG, BOWLING, STICKS], ["Paper Airplane", "A Boomerang", "Let's Go Bowling", "Random Sticks From The Ground"], "res://assets/sprites/stage_one_sausage.png"], 
+	["Fish", [RACING, TOYS, FLASHLIGHT, MERRY_GO_ROUND], ["Race With The Other Creatures", "Random Toys", "A Flashlight", "Carnival Merry-Go-Round"], "res://assets/sprites/stage_one_fish.png"], 
+	["Eggs", [RUNNING, CHESS, SOFT_TOYS, SWIMMING], ["Run Around The Block", "Chess", "Soft Toys", "Swim In The Lake"], "res://assets/sprites/stage_one_eggs.png"], 
+	["Vegetables", [DOMINOES, OUTSIDE, DOG, JUMPING_JACKS], ["Dominoes Pizza", "Touch Grass", "Dog.", "Force Them To Do Jumping Jacks"], "res://assets/sprites/stage_one_veges.png"], 
+	["Sticks", [SCHOOL, PARTYING, SCHOOL, SCHOOL], ["Go To School", "Go Partying!!", "???", "???"], "res://assets/sprites/stage_two_stick.png"],  #??? the diagram is so unclear
+	["Bowling", [DOWNTOWN, ROLLING, YOUR_FRIEND, SCHOOL], ["YEEHAW DOWNTOWN", "They See Me Rolling", "Your 'friend'", "School"], "res://assets/sprites/stage_two_bowling_pin.png"], 
+	["Boomerang", [YOUR_FRIEND, NEIGHBOUR_WINDOW, DOWNTOWN, ROLLING], ["Your 'friend'", "Yeet outta the neighbour's window", "Downtown", "Roll roll roll"], "res://assets/sprites/stage_two_boomerang.png"], 
+	["Paper airplane", [GROUND, IN_THE_AIR, FLYING, DOWNTOWN], ["To The Ground", "Float In The Air", "Soar Across The Skies", "Down down town"], "res://assets/sprites/stage_two_paper_airplane.png"], 
+	["Racing", [FISHING, FENCING, ANTARTICA, SURFACE], ["Fesh", "Fence", "Land Of The Anti-Bears", "To The Surface"], ], 
+	["Toys", [ANTARTICA, SURFACE, IN_THE_AIR, DEEP_UNDERWATER], ["Antartica", "To The Surface", "In The Aiiirrr~", "Deep Underwater"], ], 
+	["Flashlight", [DEEP_UNDERWATER, SURFACE, GROUND, CIVILIZATION], ["Choose this option", "To The Surface", "Grounded For LIFE", "Civilization"], ], 
+	["Merry go round", [SPINNING, SCHOOL, DOWNTOWN, HOME], ["Spinspinspinspinspinspin", "School Them", "Down down down town", "Let's go home!"], "res://assets/sprites/stage_two_spinny_thing.png"], 
+	["Dominoes", [HOME, ROLLING, WALKING, SPINNING], ["Home home", "Rolllllipolliii", "Walk.", "Spinspinspin"], "res://assets/sprites/stage_two_dominoes.png"], 
+	["Outside", [DOWNTOWN, SCHOOL, WALKING, CHILDCARE], ["Become a cowboy", "School", "Walking", "Care by childs"], "res://assets/sprites/stage_two_tree.png"], 
+	["Dog", [WALKING, SPINNING, DIVING, CHILDCARE], ["Walking", "Spinning", "Diving", "Childcaring"], "res://assets/sprites/stage_two_dog.png"], 
+	["Jumping jacks", [SCHOOL, HOME, SURFACE, HOUSE], ["School", "Home", "Surface", "Become a house"], "res://assets/sprites/stage_two_number_jack.png"], 
+	["Running", [HOME, SCHOOL, DIVING, MT_EVEREST], ["Home", "School", "Diving", "Climb Mt Everest And Sleep With Trash"], ], 
+	["Swimming", [SPINNING, SURFACE, MT_EVEREST, WALKING], ["Sping spin sping", "Surface", "Did you know there are penguins on Mt Everest?", "Walking"], "res://assets/sprites/stage_two_sahrk.png"], 
+	["Soft toys", [MT_EVEREST, CAT_HOME, HOUSE, SURFACE], ["Mt Evereeset", "The Home Of Cats", "House", "Surrrrface"], "res://assets/sprites/stage_two_soft_bear.png"], 
+	["Chess", [WALKING, PARTYING, ROLLING, DOWNTOWN], ["Walk", "Party", "Roll", "Down"], "res://assets/sprites/stage_two_chess.png"], 
+	["Partying", [], [], ], 
+	["School", [], [], ], 
+	["Rolling", [], [], ], 
+	["Your friend", [], [], ], 
+	["Neighbour window", [], [], ], 
+	["Ground", [], [], ], 
+	["In the air", [], [], ], 
+	["Flying", [], [], ], 
+	["Downtown", [], [], ], 
+	["Fishing", [], [], ], 
+	["Fencing", [], [], ], 
+	["Antartica", [], [], ], 
+	["Surface", [], [], ], 
+	["Deep underwater", [], [], ], 
+	["Civilisation", [], [], ], 
+	["Spinning", [], [], ], 
+	["Walking", [], [], ], 
+	["Childcare", [], [], ], 
+	["Diving", [], [], ], 
+	["Home", [], [], ], 
+	["Mt everest", [], [], ], 
+	["Cat's home", [], [], ], 
+	["House", [], [], ], 
 ]
 
 var cur_pet_type: int = 0
@@ -154,8 +154,11 @@ func option_pressed(option_no: int) -> void:
 	else:
 		show_end_of_path()
 		%QuestionLabel.text = "Congrats! You have sucessfully raised your creature (?)"
-	# Uncomment this when all sprites have a sprite yknow
-	#$PetSprite.texture = load(growth_adj_list[cur_pet_type][AdjList.SPRITE_PATH])
+		
+	if growth_adj_list[cur_pet_type].size() < 4:
+		$PetSprite.texture = load("res://assets/icon.svg")
+	else:
+		$PetSprite.texture = load(growth_adj_list[cur_pet_type][AdjList.SPRITE_PATH])
 	
 
 

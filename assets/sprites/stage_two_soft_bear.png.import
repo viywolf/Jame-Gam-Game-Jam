@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dij8kd5jumabe"
-path="res://.godot/imported/stage_two_Layer Comp 14.png-e18eaa65b855f51efbeea28f6d71a4b5.ctex"
+uid="uid://birrgnvmsk3u3"
+path="res://.godot/imported/stage_two_soft_bear.png-6a91f904dd1eb65224b68766b78e785e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_two_Layer Comp 14.png"
-dest_files=["res://.godot/imported/stage_two_Layer Comp 14.png-e18eaa65b855f51efbeea28f6d71a4b5.ctex"]
+source_file="res://assets/sprites/stage_two_soft_bear.png"
+dest_files=["res://.godot/imported/stage_two_soft_bear.png-6a91f904dd1eb65224b68766b78e785e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df3niuu010xgi"
-path="res://.godot/imported/stage_two_Layer Comp 5.png-fa3b3d8e5ed5d1a81db3f6ab02b8f463.ctex"
+uid="uid://ca3kkaiida75d"
+path="res://.godot/imported/stage_two_number_jack.png-90e1a88200cacf080eeaca115d60162c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_two_Layer Comp 5.png"
-dest_files=["res://.godot/imported/stage_two_Layer Comp 5.png-fa3b3d8e5ed5d1a81db3f6ab02b8f463.ctex"]
+source_file="res://assets/sprites/stage_two_number_jack.png"
+dest_files=["res://.godot/imported/stage_two_number_jack.png-90e1a88200cacf080eeaca115d60162c.ctex"]
 
 [params]
 

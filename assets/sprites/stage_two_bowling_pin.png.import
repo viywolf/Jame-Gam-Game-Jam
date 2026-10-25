@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca3kkaiida75d"
-path="res://.godot/imported/stage_two_Layer Comp 12.png-d297cc0917669cc41421e0a1c6d86e3e.ctex"
+uid="uid://bq14obl8loruh"
+path="res://.godot/imported/stage_two_bowling_pin.png-689b495eff579d38acc406b6fc30d887.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_two_Layer Comp 12.png"
-dest_files=["res://.godot/imported/stage_two_Layer Comp 12.png-d297cc0917669cc41421e0a1c6d86e3e.ctex"]
+source_file="res://assets/sprites/stage_two_bowling_pin.png"
+dest_files=["res://.godot/imported/stage_two_bowling_pin.png-689b495eff579d38acc406b6fc30d887.ctex"]
 
 [params]
 

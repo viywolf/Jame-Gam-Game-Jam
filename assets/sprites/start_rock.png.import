@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnumb23jxd3co"
-path="res://.godot/imported/stage_one_Layer Comp 3.png-ac30a7e75ec3097117b8e556ef3e3c11.ctex"
+uid="uid://dba2an83mlpy6"
+path="res://.godot/imported/start_rock.png-624a1f4c25d9e5a65be2763120a9f2d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_one_Layer Comp 3.png"
-dest_files=["res://.godot/imported/stage_one_Layer Comp 3.png-ac30a7e75ec3097117b8e556ef3e3c11.ctex"]
+source_file="res://assets/sprites/start_rock.png"
+dest_files=["res://.godot/imported/start_rock.png-624a1f4c25d9e5a65be2763120a9f2d8.ctex"]
 
 [params]
 

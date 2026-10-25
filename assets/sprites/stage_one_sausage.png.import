@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgaol530mo0f4"
-path="res://.godot/imported/stage_two_Layer Comp 4.png-625d482af306921e31ffe80a4b5384de.ctex"
+uid="uid://bif8mwexv4cus"
+path="res://.godot/imported/stage_one_sausage.png-6610a3601b5c77c24a66bac7c88452f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stage_two_Layer Comp 4.png"
-dest_files=["res://.godot/imported/stage_two_Layer Comp 4.png-625d482af306921e31ffe80a4b5384de.ctex"]
+source_file="res://assets/sprites/stage_one_sausage.png"
+dest_files=["res://.godot/imported/stage_one_sausage.png-6610a3601b5c77c24a66bac7c88452f9.ctex"]
 
 [params]
 
