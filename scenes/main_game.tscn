@@ -83,6 +83,15 @@ offset_right = 211.0
 offset_bottom = 57.0
 text = "See All Creatures"
 
+[node name="NewUnlockLabel" type="Label" parent="Control/ViewUnlockMenuButton" unique_id=1913845492]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 185.0
+offset_top = -11.0
+offset_right = 225.0
+offset_bottom = 36.0
+text = "!!!"
+
 [node name="PetSprite" type="Sprite2D" parent="." unique_id=1214285515]
 position = Vector2(364, 303)
 texture = ExtResource("3_d2op2")

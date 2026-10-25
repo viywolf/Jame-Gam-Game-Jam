@@ -126,7 +126,7 @@ func _process(delta: float) -> void:
 	$PetSprite.rotation = rotation_offset - PI/16
 	var position_offset: float = pingpong(cur_count * 100, 20)
 	$PetSprite.position.y = position_offset + 300
-	
+	%NewUnlockLabel.rotation = rotation_offset / 2 - PI/32
 
 
 func update_options(pet_type: int) -> void:
@@ -146,6 +146,8 @@ func show_end_of_path() -> void:
 func option_pressed(option_no: int) -> void:
 	%OptionsGridContainer.hide()
 	%QuestionLabel.hide()
+	$Control/ViewUnlockMenuButton.hide()
+	
 	AudioStreamPlayerGlobal.play_drum_roll()
 	var tween = get_tree().create_tween()
 	tween.tween_property($PetSprite, "rotation", 0, 0.5)
@@ -153,7 +155,10 @@ func option_pressed(option_no: int) -> void:
 	tween.tween_property($PetSprite, "rotation", 0, 0.5)
 	await tween.finished
 	cur_pet_type = growth_adj_list[cur_pet_type][AdjList.GROWTH_PATH][option_no]
-	Pets.pet_unlock_status[cur_pet_type] = true
+	
+	if Pets.pet_unlock_status[cur_pet_type] == false:
+		Pets.pet_unlock_status[cur_pet_type] = true
+		%NewUnlockLabel.show()
 		
 	if growth_adj_list[cur_pet_type].size() < 4:
 		$PetSprite.texture = load("res://assets/icon.svg")
@@ -172,6 +177,7 @@ func option_pressed(option_no: int) -> void:
 		%QuestionLabel.text = "Congrats! You have sucessfully raised your creature (?)"
 		
 	%QuestionLabel.show()
+	$Control/ViewUnlockMenuButton.show()
 
 
 func _on_replay_button_pressed() -> void:
@@ -183,3 +189,4 @@ func _on_replay_button_pressed() -> void:
 
 func _on_view_unlock_menu_button_pressed() -> void:
 	add_child(load("res://scenes/unlock_menu.tscn").instantiate())
+	%NewUnlockLabel.hide()

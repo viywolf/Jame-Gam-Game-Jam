@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://1boahuyqllum"]
+
+[ext_resource type="Script" uid="uid://bcwi30c53qvcd" path="res://scenes/cutscene.gd" id="1_a320b"]
+[ext_resource type="Texture2D" uid="uid://dba2an83mlpy6" path="res://assets/sprites/start_rock.png" id="1_edmg7"]
+[ext_resource type="Theme" uid="uid://cx24sipxfypfq" path="res://assets/themes/main_theme.tres" id="3_0sipp"]
+
+[sub_resource type="Animation" id="Animation_a320b"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(396, -172)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_edmg7"]
+resource_name = "reveal"
+length = 3.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.1333334, 2.83),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(396, -172), Vector2(370, 530), Vector2(361.00003, 296)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.2831855]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a320b"]
+_data = {
+&"RESET": SubResource("Animation_a320b"),
+&"reveal": SubResource("Animation_edmg7")
+}
+
+[node name="Cutscene" type="Node2D" unique_id=503042076]
+script = ExtResource("1_a320b")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=306075517]
+position = Vector2(396, -172)
+texture = ExtResource("1_edmg7")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2073214590]
+libraries/ = SubResource("AnimationLibrary_a320b")
+
+[node name="Control" type="Control" parent="." unique_id=544250039]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control" unique_id=1162943181]
+layout_mode = 0
+offset_left = 151.0
+offset_top = 501.0
+offset_right = 607.0
+offset_bottom = 681.0
+theme = ExtResource("3_0sipp")
+theme_override_font_sizes/font_size = 60
+text = "This is your lil' guy!
+Raise 'em well... "
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Control" unique_id=269379812]
+layout_mode = 0
+offset_left = 268.0
+offset_top = 645.0
+offset_right = 479.0
+offset_bottom = 749.0
+theme = ExtResource("3_0sipp")
+theme_override_font_sizes/font_size = 50
+text = "Okay"
+
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
